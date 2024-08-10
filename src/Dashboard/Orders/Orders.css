@@ -1,0 +1,139 @@
+
+ .orders-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+  }
+  
+  .order-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px; 
+  }
+  
+  .order-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .order-card p {
+    color: #555;
+  }
+  
+  .order-card hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #ddd; 
+  }
+  
+  .order-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Status color classes */
+  .status-completed {
+    border-left: 5px solid green;
+  }
+  
+  .status-shipped {
+    border-left: 5px solid blue;
+  }
+  
+  .status-pending {
+    border-left: 5px solid orange;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column; 
+    }
+  
+    .order-card {
+      width: auto;
+    }
+  }
+
+  .create-new-order-btn{
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+  }
+  
+  .popup h3 {
+    margin-top: 0;
+  }
+
+  .popup input,
+  .popup select {
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .checkbox-input {
+    width: 30px !important ;
+  }
+
+  .popup button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup button:hover {
+    background: #0056b3;
+  }
+  
+  .product-list {
+    max-height: 200px; 
+    overflow-y: auto; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin-top: 10px;
+    padding: 10px; 
+    background: #fff; 
+  }
+  
+  .product-list div {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 8px; 
+  }
+  
+  .product-list input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .product-list label {
+    margin: 0; 
+  }
+  
+  

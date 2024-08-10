@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #dee2e6; /* Border at the bottom */
+  }
+  
+  .navbar-left {
+    display: flex;
+    gap: 20px; /* Spacing between links */
+  }
+  
+  .navbar-left a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spacing between username and logout button */
+  }
+  
+  .profile-circle {
+    width: 40px; /* Diameter of the circle */
+    height: 40px; /* Diameter of the circle */
+    border-radius: 50%; /* Makes it circular */
+    background-color: #007bff; /* Background color for the profile circle */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /* Font size for initials */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    z-index: 1000;
+  }
+  
+  .dropdown.show {
+    display: block;
+  }
+  
+  .dropdown-item {
+    padding: 10px 15px;
+    color: #333;
+    display: block;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f2f5;
+  }
+  
+  /* Center the logout button */
+  .logout-button {
+    display: block;
+    width: 100%; /* Full width for centering */
+    text-align: center; /* Center text inside the button */
+    background-color: #dc3545; /* Red background for logout button */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }  
