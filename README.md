@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview of the Front-end Interface
 
-## Available Scripts
+The front-end interface is designed to enhance user experience, providing easy access to the application’s functionalities. Key features include:
 
-In the project directory, you can run:
+### 1. Create New Order
+Users can easily create new orders by filling out a form that includes:
+- Order ID
+- User ID
+- Selected products
+- Total amount
+- Order status
 
-### `npm start`
+This form submits data to the database, creating a new order record.
+![image](https://github.com/user-attachments/assets/3564750b-79f7-40d4-b2ce-176aef22c874)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Create New Product
+Authorized users can add new products through a dedicated interface. This includes fields for:
+- Product name
+- Description
+- Price
+- Category
+![image](https://github.com/user-attachments/assets/29d947a9-da52-4333-9e50-68a0b2fcb5ea)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. View All Orders and Products
+Users can view all existing orders and products in a structured format. Each entry provides essential details:
+- **Orders:** Order number, user ID, list of products, total amount, and status (e.g., completed, shipped, pending).
+- ![image](https://github.com/user-attachments/assets/0748d7a8-1a38-4af9-a40c-272e1de25cb4)
 
-### `npm test`
+- **Products:** Product name, description, category, and price, along with options to edit or delete products.
+- ![image](https://github.com/user-attachments/assets/4389df59-9c9b-4fe5-93ea-770ff73c7ad8)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. User Information
+Users can access their account details, including:
+- Username
+- Role
+- Language
+- Country
+- Company name
+![image](https://github.com/user-attachments/assets/4550de43-22c9-4d26-b410-706d2fad5bdd)
 
-### `npm run build`
+This ensures transparency and control over their profiles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
+- **Frontend:** React, HTML, CSS
+- **Backend:** Node.js
+- **Database:** MongoDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Front-End Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Order Management
+- Create new orders with an order ID, status, and list of products.
+- View all orders, including order number, user ID, total amount, and status (completed, shipped, pending).
 
-### `npm run eject`
+### 2. Product Management
+- Create new products, including name, description, category, and price.
+- View all products with options to edit or delete.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. User Information Display
+- Users can see their role, username, language, country, and company name.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Steps to Run the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Open the server terminal and execute the command:
+   ```bash
+   node server.js
+2. A separate terminal, navigate to the frontend directory and run the command:
+   ```bash
+   npm start
